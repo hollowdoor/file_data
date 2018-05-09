@@ -1,0 +1,33 @@
+{
+  "name": "file-data",
+  "version": "1.0.0",
+  "description": "File data in one object",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && node run.js"
+  },
+  "keywords": [
+    "fs",
+    "file",
+    "directory"
+  ],
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "mime": "^2.3.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/file_data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/file_data/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/file_data#readme"
+}
