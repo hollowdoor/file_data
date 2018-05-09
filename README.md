@@ -29,9 +29,7 @@ FileData {
     name,
     stats,
     type,
-    format(),
-    preload(),
-    reload()
+    format()
 }
 ```
 
