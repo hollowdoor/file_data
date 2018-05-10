@@ -13,12 +13,6 @@ p('type');
 console.log('toString: '+f)
 console.log('format: ', f.format({ext: '.md'}).filename)
 
-let f2 = new FileData('./files/index.html').preload();
-
-f2.then(f2=>{
-    let p2 = createPrint(f2);
-    p2('size');
-});
 
 
 

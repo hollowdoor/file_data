@@ -1,13 +1,16 @@
 const mime = require('mime');
 const path = require('path');
-const {statSync, stat} = require('fs');
+const {statSync} = require('fs');
 const Promise = require('bluebird');
-const pstat = Promise.promisify(stat);
 const createCache = require('./lib/getter_cache.js');
 const cache = createCache();
 
 class FileData {
     constructor(filename){
+        if(filename instanceof FileData){
+            filename = filename.filename;
+        }
+
         Object.defineProperty(this, 'filename', {
             value: filename
         });
